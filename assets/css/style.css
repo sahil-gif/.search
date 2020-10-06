@@ -1,0 +1,293 @@
+@font-face {
+    font-family: raleway;
+    src: url(Raleway-Thin.ttf);
+}
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    height: 100%;
+    background-color: #aee;
+    margin: 0;
+    padding: 0;
+}
+
+/*home screen*/
+.photo-icons {
+    width: 150px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    top: 1%;
+}
+
+.more {
+    padding: 20px;
+}
+
+/*sticker screen*/
+.face {
+    height: 100%;
+    max-height: 466px;
+}
+
+/*share screen*/
+.share {
+
+}
+
+ul.slides {
+    padding-left: 0;
+    margin: 0;
+}
+
+.share_above {
+    visibility: visible;
+}
+
+.stickers {
+    position: absolute;
+    top: 10%;
+    left: 53%;
+    visibility: visible;
+}
+
+#full-slider-wrapper {
+
+}
+
+#full-slider {
+    width: 100%;
+    height: 100%;
+    max-width: 540px;
+    overflow-y: hidden;
+}
+
+#full-slider .slide-panel {
+    height: 100vh;
+}
+
+#full-slider .slide-panel.active {
+    visibility: visible;
+}
+
+.flex-nav-next > a {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    padding: 0px;
+    margin: 0;
+}
+
+.flex-nav-prev > a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    padding: 0px;
+    margin: 0;
+}
+
+.flex-control-nav, .flex-control-paging, .flex-nav-prev, .flex-nav-next, .flex-direction-nav{
+    opacity: 0;
+    margin: 0;
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+}
+#popup2 {
+    display: table;
+    position: fixed; top: 0; left: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background: rgba(240,240,240,.9);
+    visibility: hidden;
+    animation: animaciya 1s 1s forwards;
+    cursor: pointer;
+}
+@keyframes animaciya {
+    from {visibility: hidden;}
+    to {visibility: visible;}
+}
+
+.popup_button{
+    margin-top: 6px;
+    display: inline-block;
+    border-radius: 3px;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8em;
+    background: #69c773;
+    border-bottom: 1px solid #498b50;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    text-align: center;
+}
+
+.popup_content {
+    background-color: #fefefe;
+    border-top: 5px solid #69c773;
+    text-align: center;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.popup {
+    -webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.75);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+@font-face {
+    font-family: 'cartoon';
+    src: url('../font/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.logo{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 600%;
+    align-content: center;
+    text-align: center;
+    font-family: cartoon;
+    max-width: 95%;
+    word-wrap: break-word;
+}
+.photo i, .photo img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.photo {
+    background-color: #2196f3;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: relative;
+    margin: 13px;
+}
+.button-block {
+    display: flex;
+    margin-top: 130px;
+}
+
+.settings {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    background-color: #1073c1;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+.settings i {
+    color: white;
+    padding: 18px;
+}
+
+
+.download i {
+    color: white;
+    padding: 18px;
+}
+.download {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+    background-color: #1073c1;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+
+.tag_faces i, .rotate_right i, .remove i {
+    color: white;
+    padding: 7px;
+}
+.facebook img, .tumblr img, .instagram img, .twitter img{
+    padding: 7px;
+}
+.instagram {
+    position: absolute;
+    right: 11px;
+    bottom: 195px;
+    margin: 10px;
+    background-color: #1073c1;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.tag_faces, .facebook {
+    position: absolute;
+    right: 11px;
+    bottom: 150px;
+    margin: 10px;
+    background-color: #1073c1;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+.rotate_right, .tumblr {
+    position: absolute;
+    right: 11px;
+    bottom: 105px;
+    margin: 10px;
+    background-color: #1073c1;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+.remove, .twitter {
+    position: absolute;
+    right: 11px;
+    bottom: 63px;
+    margin: 10px;
+    background-color: #1073c1;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+img.pizza {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    width: 30%;
+}
+
+
+
+
+
+
+
+

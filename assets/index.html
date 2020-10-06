@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+
+    <title>Net Solutions</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+<div id="full-slider">
+    <ul class="slides">
+        <li class="slide-panel" id="screen1"
+            style="background-image: url(img/screen1.jpg); background-size: cover; position: relative;">
+        </li>
+
+        <li class="slide-panel" id="screen2"
+            style="background: url(img/screen2.jpg); background-size: cover; position: relative;">
+        </li>
+
+        <li class="slide-panel" id="screen3"
+            style="background: url(img/screen3.jpg); background-size: cover;  position: relative;">
+        </li>
+
+
+        <li class="slide-panel" id="screen4"
+            style="background: url(img/screen4.jpg); background-size: cover;  position: relative;">
+        </li>
+    </ul>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup_content">
+        <div>Attention</div>
+        <div style="margin-top: 6px;"><b>Net Solutions</b></div>
+        <button class="popup_button">Ok</button>
+    </div>
+</div>
+<script>
+    window.onkeyup = okno;
+    document.getElementById('popup').onclick = okno;
+    function okno(e) {
+        if (e.target.nodeName != 'DIV' && e.target.nodeName != 'FIGCAPTION' || e.keyCode == 27) {
+            document.getElementById('popup').style.display = 'none';
+            localStorage.setItem('popup1', 'none');
+        }
+    }
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#full-slider').flexslider({
+            animation: "slide",
+            touch: true,
+            controlNav: false,
+            itemWidth: 0,
+            directionNav: true,
+            useCSS: true
+        });
+    });
+</script>
+
+</body>
+</html>
